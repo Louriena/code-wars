@@ -26,7 +26,9 @@ Note:
 Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
 
 There are no fractions of people. At the end of each year, the population count is an integer: 252.8 people round down to 252 persons.
-
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+https://www.codewars.com/kata/563b662a59afc2b5120000c6
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ----------------------------------------Task 2 ----------------------------------------------------
 
 You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this "outlier" N.
@@ -35,6 +37,9 @@ Examples
 [2, 4, 0, 100, 4, 11, 2602, 36] -->  11 (the only odd number)
 
 [160, 3, 1719, 19, 11, 13, -21] --> 160 (the only even number)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+https://www.codewars.com/kata/5526fc09a1bbd946250002dc
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ----------------------------------------Task 3 ----------------------------------------------------
 Don't Drink the Water
 
@@ -56,4 +61,7 @@ Given a two-dimensional array representation of a glass of mixed liquids, sort t
 }                             }
  
 The glass representation may be larger or smaller. If a liquid doesn't fill a row, it floats to the top and to the left.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+https://www.codewars.com/kata/562e6df5cf2d3908ad00019e
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
