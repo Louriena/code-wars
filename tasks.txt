@@ -1,0 +1,59 @@
+----------------------------------------Task 1 ----------------------------------------------------
+In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the town need to see its population greater than or equal to p = 1200 inhabitants?
+
+At the end of the first year there will be: 
+1000 + 1000 * 0.02 + 50 => 1070 inhabitants
+
+At the end of the 2nd year there will be: 
+1070 + 1070 * 0.02 + 50 => 1141 inhabitants (** number of inhabitants is an integer **)
+
+At the end of the 3rd year there will be:
+1141 + 1141 * 0.02 + 50 => 1213
+
+It will need 3 entire years.
+More generally given parameters:
+
+p0, percent, aug (inhabitants coming or leaving each year), p (population to equal or surpass)
+
+the function nb_year should return n number of entire years needed to get a population greater or equal to p.
+
+aug is an integer, percent a positive or null floating number, p0 and p are positive integers (> 0)
+
+Examples:
+nb_year(1500, 5, 100, 5000) -> 15
+nb_year(1500000, 2.5, 10000, 2000000) -> 10
+Note:
+Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
+
+There are no fractions of people. At the end of each year, the population count is an integer: 252.8 people round down to 252 persons.
+
+----------------------------------------Task 2 ----------------------------------------------------
+
+You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this "outlier" N.
+
+Examples
+[2, 4, 0, 100, 4, 11, 2602, 36] -->  11 (the only odd number)
+
+[160, 3, 1719, 19, 11, 13, -21] --> 160 (the only even number)
+----------------------------------------Task 3 ----------------------------------------------------
+Don't Drink the Water
+
+Given a two-dimensional array representation of a glass of mixed liquids, sort the array such that the liquids appear in the glass based on their density. (Lower density floats to the top) The width of the glass will not change from top to bottom.
+
+======================
+|   Density Chart    |
+======================
+| Honey   | H | 1.36 |
+| Water   | W | 1.00 |
+| Alcohol | A | 0.87 |
+| Oil     | O | 0.80 |
+----------------------
+
+{                             {
+  { 'H', 'H', 'W', 'O' },        { 'O','O','O','O' },
+  { 'W', 'W', 'O', 'W' },  =>    { 'W','W','W','W' },
+  { 'H', 'H', 'O', 'O' }         { 'H','H','H','H' }
+}                             }
+ 
+The glass representation may be larger or smaller. If a liquid doesn't fill a row, it floats to the top and to the left.
+
